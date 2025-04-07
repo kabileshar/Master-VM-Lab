@@ -1,80 +1,73 @@
-# 💻 Virtualization and Cloud Security – Lab 1
+# 💻 Virtualization & Cloud Security Lab
 
-**Course:** INFO8855 – Virtualization and Cloud Security  
-**Student:** Kabileshar Ramakrishnan Mohan Kumar  
-**Student ID:** 8856188  
 
-This repository contains lab work focused on virtualization, VM deployment, private cloud infrastructure, and secure identity management using VMware tools.
+This project contains a full set of virtualization lab exercises focused on Golden Master VM creation, private cloud infrastructure, secure authentication using Active Directory, and vCenter management using VMware technologies.
 
 ---
 
-## 📚 Overview
+## 📚 Lab Topics Covered
 
-The goal of this lab is to:
-- Create a **Golden Master Image (GMI)** in VMware
-- Clone and deploy VMs from the master image
-- Configure **private cloud infrastructure** using ESXi and vCenter
-- Secure authentication via **Active Directory**
-- Centrally manage hosts using **vCenter Server Appliance**
+### 🔹 Lab 1.1 – Golden Master VM Lab
+- ✅ Created a base VM using Kali Linux in VMware Workstation
+- ✅ Exported the base VM as OVF/OVA to serve as a Golden Master Image (GMI)
+- ✅ Cloned and deployed multiple VMs from the GMI
+- ✅ Verified NAT networking and internet connectivity on all deployed VMs
 
----
-
-## 🛠️ Technologies Used
-- **VMware Workstation**
-- **VMware vSphere & vCenter**
-- **ESXi Hosts**
-- **Windows Server (AD DS)**
-- **Kali Linux**
+### 🔹 Lab 1.2 – Private Cloud Infrastructure
+- ✅ Configured NTP and added ESXi hosts to an Active Directory domain
+- ✅ Installed and configured vCenter Server Appliance (VCSA)
+- ✅ Enabled SSO authentication using Active Directory as an identity source
+- ✅ Created a new datacenter and added ESXi hosts for centralized management
 
 ---
 
-## ✅ Lab Breakdown
+## 🧠 Key Takeaways
 
-### 🔸 Lab 1.1 – Master VM Lab
-- **Task 1:** Created a base VM using Kali Linux
-- **Task 2:** Exported the VM as an OVF/OVA (Golden Master Image)
-- **Task 3:** Cloned and deployed two VMs from the master image
-
-### 🔸 Lab 1.2 – Private Cloud Infrastructure Lab
-- **Task 1:** Setup and authenticated ESXi hosts with Active Directory
-- **Task 2:** Installed and configured vCenter Server Appliance (VCSA)
-- **Task 3:** Added ESXi hosts to the datacenter and managed via vCenter
+- **Golden Master Image (GMI):** Learned to create, configure, and clone base images for standardized deployments
+- **OVF vs OVA:** Understood the packaging differences and use cases for each format
+- **Active Directory Integration:** Enabled secure centralized login across ESXi hosts and vCenter
+- **Private Cloud Architecture:** Built a dedicated infrastructure isolated from the public internet
+- **vCenter Server:** Managed multiple ESXi hosts with automation, access control, and centralized provisioning
 
 ---
 
-## 💡 Key Concepts Learned
-- Benefits of using a Golden Master Image
-- Difference between OVF and OVA
-- Configuring NTP and Active Directory for secure environments
-- Single Sign-On (SSO) using AD
-- Centralized host management using vCenter
+## 🛠️ Technologies & Tools Used
+
+- VMware Workstation
+- VMware ESXi
+- VMware vCenter Server Appliance (VCSA)
+- Windows Server (Active Directory, DNS, NTP)
+- Kali Linux
 
 ---
 
-## 📸 Screenshots
-> Screenshots and detailed documentation can be found in the lab document:  
-**`LAB - 1 - Master VM Lab.docx`**
+## 🖼️ Lab Screenshots
 
----
-
-## 🧠 Reflections
-This lab gave me hands-on experience with enterprise-level virtualization tools. I understood the importance of:
-- Config management
-- Secure identity and access
-- Infrastructure as a service (IaaS) models
-- Real-world use cases for vSphere and AD integration
+Screenshots for all tasks are available within the lab documentation.  
+📄 See: `LAB - 1 - Master VM-Lab.docx`
 
 ---
 
 ## 🔗 References
+
 - [Benefits of Active Directory](https://www.microsoft.com/en-us/security/business/identity-and-access-management/benefits-of-active-directory)
-- [VMware vCenter Server – PDF](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/vcenter/VMware_vCenter_Server.pdf)
-- [Why is NTP Important?](https://www.greywizard.com/why-is-ntp-important/)
+- [VMware vCenter Server – Official PDF](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/vcenter/VMware_vCenter_Server.pdf)
 - [What is Single Sign-On (SSO)?](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/what-is-single-sign-on)
+- [Importance of NTP](https://www.cisco.com/c/en/us/about/security-center/importance-time-synchronization.html)
+- [vSphere + PowerCLI](https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/techpaper/automating-vsphere-tasks-with-powercli.pdf)
 
 ---
 
-## 📁 Project Structure
-## ✍️ Author
-**Kabileshar Ramakrishnan Mohan Kumar**  
-Cybersecurity & Cloud Enthusiast | VMware 🛡️
+## 📁 Folder Structure
+
+
+---
+
+## 👨‍💻 Author
+
+**Kabileshar R. Mohan Kumar**  
+Cybersecurity Enthusiast   
+📧 [Connect on LinkedIn] https://www.linkedin.com/in/kabileshar/
+
+---
+
